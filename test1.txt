@@ -1,0 +1,200 @@
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git status                                                                                                            On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sampleGit.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git add sampleGit.txt
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sampleGit.txt
+
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git commit -m "added sampleGit.txt"                                                                                   [master (root-commit) a82ba12] added sampleGit.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sampleGit.txt
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   sampleGit.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git add .
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git commit -m "added index.html and updated sample"
+[master fbc98b6] added index.html and updated sample
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 index.html
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git remote add origin https://github.com/hemangidk/learnGitRepo.git
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 534 bytes | 534.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/hemangidk/learnGitRepo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git config --global user.email "hemangihere@gmail.com"
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git config --global user.name "hemangiDK"
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git log
+commit fbc98b69bd996bb950cef5e1d8f069ef6e344b96 (HEAD -> master, origin/master)
+Author: hemangidk <hemangidk@users.noreply.github.com>
+Date:   Thu Feb 27 22:52:08 2020 +0530
+
+    added index.html and updated sample
+
+commit a82ba12fe2ff4b0cd0ead9dc3dbcc78a0f3f0a1f
+Author: hemangidk <hemangidk@users.noreply.github.com>
+Date:   Thu Feb 27 22:50:16 2020 +0530
+
+    added sampleGit.txt
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git sta
+stage    stash    status
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git sta
+stage    stash    status
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git sta
+stage    stash    status
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git sta
+stage    stash    status
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git branch "hk_branch"
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git checkout "hk_branch"
+Switched to branch 'hk_branch'
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (hk_branch)
+$ add test1.text
+bash: add: command not found
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (hk_branch)
+$ testfile.text
+bash: testfile.text: command not found
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (hk_branch)
+$ type test.text
+bash: type: test.text: not found
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (hk_branch)
+$ git add .
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (hk_branch)
+$ git commit -m "added test1.text"
+[hk_branch 1545983] added test1.text
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test1.txt
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (hk_branch)
+$ git push -u origin "hk_branch"
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 241 bytes | 241.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'hk_branch' on GitHub by visiting:
+remote:      https://github.com/hemangidk/learnGitRepo/pull/new/hk_branch
+remote:
+To https://github.com/hemangidk/learnGitRepo.git
+ * [new branch]      hk_branch -> hk_branch
+Branch 'hk_branch' set up to track remote branch 'hk_branch' from 'origin'.
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (hk_branch)
+$ checkout master
+bash: checkout: command not found
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (hk_branch)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git merge "hk_branch"
+Updating fbc98b6..1545983
+Fast-forward
+ test1.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test1.txt
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/hemangidk/learnGitRepo.git
+   fbc98b6..1545983  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git branch -d "hk_branch"                                                                                             Deleted branch hk_branch (was 1545983).
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
+$ git push origin --delete "hk_branch"
+To https://github.com/hemangidk/learnGitRepo.git
+ - [deleted]         hk_branch
+
+user@DESKTOP-NMEC699 MINGW64 /d/learngit (master)
